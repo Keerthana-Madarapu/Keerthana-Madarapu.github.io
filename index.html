@@ -2,134 +2,187 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Keerthana Madarapu – IT Analyst</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    /* Global Styles */
     body {
-      margin: 0;
       font-family: 'Inter', sans-serif;
-      background: #f8fafc;
+      margin: 0;
+      background-color: #f0f4f8;
       color: #1e293b;
+      line-height: 1.6;
     }
+    a {
+      color: #1e40af;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
     header {
-      background: #1e40af;
+      background: linear-gradient(135deg, #1e3a8a, #3b82f6);
       color: white;
+      padding: 3rem 1rem;
       text-align: center;
-      padding: 4rem 1rem;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.8rem;
-      font-weight: 700;
+      margin: 0.5rem 0;
+      font-size: 2.5rem;
     }
     header p {
+      font-style: italic;
       margin-top: 0.5rem;
       font-size: 1.2rem;
-      font-weight: 400;
     }
-    .container {
+
+    /* Sections */
+    section {
       max-width: 900px;
       margin: 2rem auto;
-      padding: 0 1rem;
+      padding: 1rem 1rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.05);
     }
-    .button-group a {
-      display: inline-block;
-      padding: 0.6rem 1.2rem;
-      margin: 0.5rem;
-      background: #1e40af;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: 600;
-    }
-    .section {
-      margin-top: 2.5rem;
-    }
-    .section h2 {
-      font-size: 1.8rem;
+    section h2 {
+      color: #1e3a8a;
       border-bottom: 3px solid #3b82f6;
       display: inline-block;
       margin-bottom: 1rem;
+      padding-bottom: 0.3rem;
     }
-    .project-card, .experience-card {
-      background: white;
+
+    /* Lists */
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #3b82f6;
+      font-weight: bold;
+    }
+
+    /* Contact cards */
+    .contact-list li {
+      display: inline-block;
+      margin-right: 1.5rem;
+      font-weight: 600;
+    }
+
+    /* Projects cards */
+    .project-card {
+      background: #e0f2fe;
       padding: 1rem;
       border-radius: 10px;
       margin-bottom: 1rem;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
     }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Footer */
     footer {
       text-align: center;
-      padding: 1.5rem 1rem;
-      margin-top: 3rem;
-      background: #1e40af;
+      padding: 1.5rem;
+      background-color: #1e3a8a;
       color: white;
+      margin-top: 2rem;
+    }
+
+    /* Graphics / Icons */
+    .section-icon {
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+      color: #3b82f6;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Keerthana Madarapu</h1>
-  <p>IT Analyst & Aspiring Tech Leader</p>
-  <div class="button-group">
-    <a href="mailto:keerthanamadarapu40@gmail.com">Email Me</a>
-    <a href="https://www.linkedin.com/in/keerthanamadarapu/" target="_blank">LinkedIn</a>
-    <a href="https://github.com/keerthanamadarapu" target="_blank">GitHub</a>
-  </div>
-</header>
+  <header>
+    <h1>Keerthana Madarapu – IT Analyst</h1>
+    <p>“I don’t just manage IT systems; I ensure technology acts as a bridge—not a barrier—to business goals.”</p>
+  </header>
 
-<div class="container">
-
-  <!-- About -->
-  <section class="section">
+  <section>
     <h2>About Me</h2>
-    <p>I’m an IT Analyst with experience in Incident Management, System Administration, and End‑User Support. I specialize in driving operational improvements at scale while pursuing a Master's in Technology Management — blending technical expertise with strategic insight.</p>
+    <p>With a foundation in Civil Engineering and a passion for systems thinking, I transitioned into IT to solve complex challenges at scale. Over the past two years at HCL Technologies, I’ve supported critical healthcare infrastructure for Novo Nordisk, specializing in Incident Management, System Administration, and End-User Support. Now pursuing a Master's in Technology Management at Lindsey Wilson University, I aim to blend deep technical experience with strategic leadership to drive digital transformation.</p>
   </section>
 
-  <!-- Experience / Projects -->
-  <section class="section">
-    <h2>Key Projects & Experience</h2>
-    <div class="project-card">
-      <strong>GitHub Projects</strong><br>
-      Explore my HTML, CSS, and IT‑focused learning projects on GitHub.
-    </div>
-    <div class="project-card">
-      <strong>Power BI Dashboards</strong><br>
-      Dashboards for SLA compliance and ticket trend analysis (internal use).
-    </div>
-    <div class="project-card">
-      <strong>Process & KCS Documentation</strong><br>
-      Enhanced onboarding and knowledge base workflows.
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section class="section">
-    <h2>Skills & Tools</h2>
+  <section>
+    <h2>Core Competencies</h2>
     <ul>
-      <li>ITSM, Incident Management, System Administration</li>
-      <li>Microsoft Entra ID & Authentication</li>
-      <li>Power BI & Excel Automation</li>
-      <li>Citrix & VMware</li>
-      <li>Cross‑Functional Collaboration & Communication</li>
+      <li>IT Service Management (ITSM) & Incident Handling</li>
+      <li>Windows/iOS Troubleshooting & User Support</li>
+      <li>Microsoft Entra ID & Authentication Management</li>
+      <li>Citrix Workspace & VMware Administration</li>
+      <li>Root Cause Analysis & Process Optimization</li>
+      <li>Excel Automation & Power BI Trend Analysis</li>
+      <li>Knowledge-Centered Services (KCS) Coaching</li>
+      <li>Stakeholder Communication & Cross-Functional Collaboration</li>
     </ul>
   </section>
 
-  <!-- Contact -->
-  <section class="section">
-    <h2>Contact</h2>
-    <p>📍 Dallas, TX<br>
-       📧 <a href="mailto:keerthanamadarapu40@gmail.com">keerthanamadarapu40@gmail.com</a><br>
-       📞 +1 (551) 358‑1753</p>
+  <section>
+    <h2>Highlights & Achievements</h2>
+    <ul>
+      <li>Employee of the Month within 2 months at HCL for technical excellence and customer-first service</li>
+      <li>Reduced ticket resolution time by 30% and critical incident backlog by 40%</li>
+      <li>Managed 300+ ServiceNow tickets/month with 98% user satisfaction</li>
+      <li>Led OS migrations for 150+ users and supported 1,000+ healthcare professionals across 5+ sites</li>
+    </ul>
   </section>
 
-</div>
+  <section>
+    <h2>Projects & Portfolio</h2>
+    <div class="project-card">
+      <strong>GitHub: HTML & CSS Learnings</strong> – <a href="https://github.com/keerthanamadarapu" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project-card">
+      <strong>Power BI Dashboards</strong> – SLA compliance and ticket trend analysis (internal use)
+    </div>
+    <div class="project-card">
+      <strong>Process Documentation & KCS Knowledge Base</strong> – Contributions for new hire onboarding
+    </div>
+  </section>
 
-<footer>
-  &copy; 2026 Keerthana Madarapu
-</footer>
+  <section>
+    <h2>Education & Certifications</h2>
+    <ul>
+      <li>M.S. Technology Management – Lindsey Wilson College, USA | GPA: 4.0 | Expected Aug 2026</li>
+      <li>B.E. Civil Engineering – Annamacharya Institute of Technology and Sciences, India (2018–2022)</li>
+      <li>Excel Automation & AI – Skill Nation (Feb 2024)</li>
+      <li>Data Science: From Choice to Necessity – Skill-Lync (Jan 2022)</li>
+      <li>Currently learning Responsive Web Design via freeCodeCamp</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <ul class="contact-list">
+      <li>📍 Dallas, TX</li>
+      <li>📧 <a href="mailto:keerthanamadarapu40@gmail.com">keerthanamadarapu40@gmail.com</a></li>
+      <li>📞 +1 (551) 358-1753</li>
+      <li>🔗 <a href="https://www.linkedin.com/in/keerthana2210/" target="_blank">LinkedIn</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2026 Keerthana Madarapu
+  </footer>
 
 </body>
 </html>
