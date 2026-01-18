@@ -6,45 +6,13 @@
   <title>Keerthana Madarapu – IT Analyst</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    /* Global Styles */
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #1e293b;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0.5rem 0;
-      font-size: 2rem;
-    }
-    header p {
-      font-style: italic;
-      margin-top: 0.5rem;
-    }
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    h2 {
+      background-color: #f0f4f8;
       color: #1e293b;
-      border-bottom: 2px solid #1e293b;
-      display: inline-block;
-      margin-bottom: 1rem;
-      padding-bottom: 0.3rem;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin-bottom: 0.5rem;
+      line-height: 1.6;
     }
     a {
       color: #1e40af;
@@ -53,12 +21,92 @@
     a:hover {
       text-decoration: underline;
     }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0.5rem 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-style: italic;
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    /* Sections */
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem 1rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+    }
+    section h2 {
+      color: #1e3a8a;
+      border-bottom: 3px solid #3b82f6;
+      display: inline-block;
+      margin-bottom: 1rem;
+      padding-bottom: 0.3rem;
+    }
+
+    /* Lists */
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #3b82f6;
+      font-weight: bold;
+    }
+
+    /* Contact cards */
+    .contact-list li {
+      display: inline-block;
+      margin-right: 1.5rem;
+      font-weight: 600;
+    }
+
+    /* Projects cards */
+    .project-card {
+      background: #e0f2fe;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      transition: transform 0.2s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Footer */
     footer {
       text-align: center;
       padding: 1.5rem;
-      background-color: #1e293b;
+      background-color: #1e3a8a;
       color: white;
       margin-top: 2rem;
+    }
+
+    /* Graphics / Icons */
+    .section-icon {
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+      color: #3b82f6;
     }
   </style>
 </head>
@@ -89,7 +137,7 @@
   </section>
 
   <section>
-    <h2>Achievements</h2>
+    <h2>Highlights & Achievements</h2>
     <ul>
       <li>Employee of the Month within 2 months at HCL for technical excellence and customer-first service</li>
       <li>Reduced ticket resolution time by 30% and critical incident backlog by 40%</li>
@@ -99,37 +147,36 @@
   </section>
 
   <section>
-    <h2>Certifications & Learning</h2>
+    <h2>Projects & Portfolio</h2>
+    <div class="project-card">
+      <strong>GitHub: HTML & CSS Learnings</strong> – <a href="https://github.com/keerthanamadarapu" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project-card">
+      <strong>Power BI Dashboards</strong> – SLA compliance and ticket trend analysis (internal use)
+    </div>
+    <div class="project-card">
+      <strong>Process Documentation & KCS Knowledge Base</strong> – Contributions for new hire onboarding
+    </div>
+  </section>
+
+  <section>
+    <h2>Education & Certifications</h2>
     <ul>
-      <li>Excel Automation and AI – Skill Nation (Feb 2024)</li>
+      <li>M.S. Technology Management – Lindsey Wilson College, USA | GPA: 4.0 | Expected Aug 2026</li>
+      <li>B.E. Civil Engineering – Annamacharya Institute of Technology and Sciences, India (2018–2022)</li>
+      <li>Excel Automation & AI – Skill Nation (Feb 2024)</li>
       <li>Data Science: From Choice to Necessity – Skill-Lync (Jan 2022)</li>
       <li>Currently learning Responsive Web Design via freeCodeCamp</li>
     </ul>
   </section>
 
   <section>
-    <h2>Projects & Portfolio</h2>
-    <ul>
-      <li><a href="https://github.com/keerthanamadarapu" target="_blank">GitHub: HTML & CSS Learnings</a></li>
-      <li>Power BI dashboards for SLA compliance and ticket trend analysis</li>
-      <li>Process documentation and KCS knowledge base contributions for onboarding</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Education</h2>
-    <ul>
-      <li>M.S. Technology Management – Lindsey Wilson College, USA | GPA: 4.0 | Expected Aug 2026</li>
-      <li>B.E. Civil Engineering – Annamacharya Institute of Technology and Sciences, India (2018–2022)</li>
-    </ul>
-  </section>
-
-  <section>
     <h2>Contact</h2>
-    <ul>
+    <ul class="contact-list">
       <li>📍 Dallas, TX</li>
       <li>📧 <a href="mailto:keerthanamadarapu40@gmail.com">keerthanamadarapu40@gmail.com</a></li>
       <li>📞 +1 (551) 358-1753</li>
+      <li>🔗 <a href="https://www.linkedin.com/in/keerthanamadarapu/" target="_blank">LinkedIn</a></li>
     </ul>
   </section>
 
@@ -139,4 +186,3 @@
 
 </body>
 </html>
-
