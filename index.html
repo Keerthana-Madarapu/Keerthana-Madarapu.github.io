@@ -4,235 +4,137 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Keerthana Madarapu – IT Analyst</title>
-
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
   <style>
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
-      background-color: #f4f6fb;
+      background-color: #f9f9f9;
       color: #333;
       line-height: 1.6;
     }
-
-    a {
-      color: #2563eb;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    /* HERO SECTION */
-    .hero {
-      height: 100vh;
-      background: linear-gradient(135deg, #1e3a8a, #3b82f6);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    header {
+      background-color: #1e293b;
       color: white;
+      padding: 2rem;
       text-align: center;
     }
-
-    .hero-content {
-      animation: fadeInZoom 2s ease;
-    }
-
-    .profile-pic {
-      width: 170px;
-      height: 170px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 5px solid white;
-      margin-bottom: 1rem;
-    }
-
-    .hero h1 {
-      font-size: 2.6rem;
+    header h1 {
       margin: 0.5rem 0;
+      font-size: 2rem;
     }
-
-    .hero p {
-      font-size: 1.2rem;
+    header p {
       font-style: italic;
-      opacity: 0.95;
-      max-width: 700px;
-      margin: auto;
+      margin-top: 0.5rem;
     }
-
-    @keyframes fadeInZoom {
-      from {
-        opacity: 0;
-        transform: scale(0.9);
-      }
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-
-    /* SECTIONS */
     section {
       max-width: 900px;
-      margin: 2.5rem auto;
-      padding: 2rem;
-      background: white;
-      border-radius: 14px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
-
-    section h2 {
-      color: #1e3a8a;
-      border-bottom: 3px solid #3b82f6;
+    h2 {
+      color: #1e293b;
+      border-bottom: 2px solid #1e293b;
       display: inline-block;
-      margin-bottom: 1.2rem;
+      margin-bottom: 1rem;
       padding-bottom: 0.3rem;
     }
-
-    /* LISTS */
     ul {
       list-style: none;
       padding: 0;
     }
-
     li {
-      margin-bottom: 0.7rem;
-      padding-left: 1.6rem;
-      position: relative;
+      margin-bottom: 0.5rem;
     }
-
-    li::before {
-      content: "✔";
-      position: absolute;
-      left: 0;
-      color: #3b82f6;
-      font-weight: bold;
+    a {
+      color: #1e40af;
+      text-decoration: none;
     }
-
-    /* PROJECT CARDS */
-    .project-card {
-      background: #eef4ff;
-      padding: 1.2rem;
-      border-radius: 12px;
-      margin-bottom: 1rem;
-      transition: transform 0.25s, box-shadow 0.25s;
+    a:hover {
+      text-decoration: underline;
     }
-
-    .project-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.12);
-    }
-
-    /* CONTACT */
-    .contact-list li {
-      display: inline-block;
-      margin-right: 1.5rem;
-      font-weight: 600;
-    }
-
-    /* FOOTER */
     footer {
       text-align: center;
       padding: 1.5rem;
-      background-color: #1e3a8a;
+      background-color: #1e293b;
       color: white;
-      margin-top: 3rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
-
 <body>
 
-  <!-- HERO -->
-  <div class="hero">
-    <div class="hero-content">
-      <img src="profile.jpg" alt="Keerthana Madarapu" class="profile-pic">
-      <h1>Keerthana Madarapu</h1>
-      <p>“I don’t just manage IT systems; I ensure technology acts as a bridge—not a barrier—to business goals.”</p>
-    </div>
-  </div>
+  <header>
+    <h1>Keerthana Madarapu – IT Analyst</h1>
+    <p>“I don’t just manage IT systems; I ensure technology acts as a bridge—not a barrier—to business goals.”</p>
+  </header>
 
-  <!-- ABOUT -->
   <section>
     <h2>About Me</h2>
-    <p>
-      With a foundation in Civil Engineering and a passion for systems thinking, I transitioned into IT to solve complex challenges at scale.
-      Over the past two years at HCL Technologies, I’ve supported mission-critical healthcare infrastructure for Novo Nordisk, where reliability is non-negotiable.
-      Now pursuing a Master’s in Technology Management at Lindsey Wilson University, I’m preparing to evolve into a strategic IT leader driving digital transformation.
-    </p>
+    <p>With a foundation in Civil Engineering and a passion for systems thinking, I transitioned into IT to solve complex challenges at scale. Over the past two years at HCL Technologies, I’ve supported critical healthcare infrastructure for Novo Nordisk, specializing in Incident Management, System Administration, and End-User Support. Now pursuing a Master's in Technology Management at Lindsey Wilson University, I aim to blend deep technical experience with strategic leadership to drive digital transformation.</p>
   </section>
 
-  <!-- SKILLS -->
   <section>
     <h2>Core Competencies</h2>
     <ul>
       <li>IT Service Management (ITSM) & Incident Handling</li>
-      <li>Windows & iOS Troubleshooting</li>
-      <li>Microsoft Entra ID & Authentication</li>
+      <li>Windows/iOS Troubleshooting & User Support</li>
+      <li>Microsoft Entra ID & Authentication Management</li>
       <li>Citrix Workspace & VMware Administration</li>
       <li>Root Cause Analysis & Process Optimization</li>
-      <li>Excel Automation & Power BI Analytics</li>
-      <li>Knowledge-Centered Services (KCS)</li>
-      <li>Cross-Functional Stakeholder Communication</li>
+      <li>Excel Automation & Power BI Trend Analysis</li>
+      <li>Knowledge-Centered Services (KCS) Coaching</li>
+      <li>Stakeholder Communication & Cross-Functional Collaboration</li>
     </ul>
   </section>
 
-  <!-- ACHIEVEMENTS -->
   <section>
-    <h2>Highlights & Achievements</h2>
+    <h2>Achievements</h2>
     <ul>
-      <li>Employee of the Month at HCL within 2 months</li>
-      <li>Reduced ticket resolution time by 30%</li>
-      <li>Cleared 40% critical incident backlog</li>
-      <li>Handled 300+ ServiceNow tickets/month with 98% satisfaction</li>
-      <li>Supported 1,000+ healthcare professionals across multiple sites</li>
+      <li>Employee of the Month within 2 months at HCL for technical excellence and customer-first service</li>
+      <li>Reduced ticket resolution time by 30% and critical incident backlog by 40%</li>
+      <li>Managed 300+ ServiceNow tickets/month with 98% user satisfaction</li>
+      <li>Led OS migrations for 150+ users and supported 1,000+ healthcare professionals across 5+ sites</li>
     </ul>
   </section>
 
-  <!-- PROJECTS -->
+  <section>
+    <h2>Certifications & Learning</h2>
+    <ul>
+      <li>Excel Automation and AI – Skill Nation (Feb 2024)</li>
+      <li>Data Science: From Choice to Necessity – Skill-Lync (Jan 2022)</li>
+      <li>Currently learning Responsive Web Design via freeCodeCamp</li>
+    </ul>
+  </section>
+
   <section>
     <h2>Projects & Portfolio</h2>
-
-    <div class="project-card">
-      <strong>GitHub – HTML & CSS Portfolio</strong><br>
-      <a href="https://github.com/keerthanamadarapu" target="_blank">View GitHub</a>
-    </div>
-
-    <div class="project-card">
-      <strong>Power BI Dashboards</strong><br>
-      SLA compliance & ticket trend analysis (internal projects)
-    </div>
-
-    <div class="project-card">
-      <strong>KCS Documentation</strong><br>
-      Knowledge base creation for onboarding & support efficiency
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section>
-    <h2>Education & Certifications</h2>
     <ul>
-      <li>M.S. Technology Management – Lindsey Wilson College (GPA 4.0, Aug 2026)</li>
-      <li>B.E. Civil Engineering – AITS, India</li>
-      <li>Excel Automation & AI – Skill Nation</li>
-      <li>Data Science – Skill-Lync</li>
-      <li>Responsive Web Design – freeCodeCamp (ongoing)</li>
+      <li><a href="https://github.com/keerthanamadarapu" target="_blank">GitHub: HTML & CSS Learnings</a></li>
+      <li>Power BI dashboards for SLA compliance and ticket trend analysis</li>
+      <li>Process documentation and KCS knowledge base contributions for onboarding</li>
     </ul>
   </section>
 
-  <!-- CONTACT -->
+  <section>
+    <h2>Education</h2>
+    <ul>
+      <li>M.S. Technology Management – Lindsey Wilson College, USA | GPA: 4.0 | Expected Aug 2026</li>
+      <li>B.E. Civil Engineering – Annamacharya Institute of Technology and Sciences, India (2018–2022)</li>
+    </ul>
+  </section>
+
   <section>
     <h2>Contact</h2>
-    <ul class="contact-list">
+    <ul>
       <li>📍 Dallas, TX</li>
-      <li>📧 <a href="mailto:keerthanamadarapu40@gmail.com">Email</a></li>
+      <li>📧 <a href="mailto:keerthanamadarapu40@gmail.com">keerthanamadarapu40@gmail.com</a></li>
       <li>📞 +1 (551) 358-1753</li>
-      <li>🔗 <a href="https://www.linkedin.com/in/keerthana2210/" target="_blank">LinkedIn</a></li>
-    </ul>
+      
   </section>
 
   <footer>
-    © 2026 Keerthana Madarapu
+    &copy; 2026 Keerthana Madarapu
   </footer>
 
 </body>
